@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44850F10DDF5D74302935ECF /* Pods_imageia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6F1D19DDD531229BD9B609 /* Pods_imageia.framework */; };
 		8859C08322FF997D00D10534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859C08222FF997D00D10534 /* AppDelegate.swift */; };
 		8859C08522FF997D00D10534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859C08422FF997D00D10534 /* ViewController.swift */; };
 		8859C08822FF997D00D10534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8859C08622FF997D00D10534 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4114ED9E3127FFCAA87FDB6B /* Pods-imageia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imageia.release.xcconfig"; path = "Pods/Target Support Files/Pods-imageia/Pods-imageia.release.xcconfig"; sourceTree = "<group>"; };
 		8859C07F22FF997D00D10534 /* imageia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8859C08222FF997D00D10534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8859C08422FF997D00D10534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8859C08E22FF998B00D10534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8859C09822FFD23800D10534 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8859C09A22FFD29D00D10534 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		95A4C37A620A7D4FF2677C2B /* Pods-imageia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imageia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imageia/Pods-imageia.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6F1D19DDD531229BD9B609 /* Pods_imageia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imageia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44850F10DDF5D74302935ECF /* Pods_imageia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F97A3119200FD1891046B14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95A4C37A620A7D4FF2677C2B /* Pods-imageia.debug.xcconfig */,
+				4114ED9E3127FFCAA87FDB6B /* Pods-imageia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8859C07622FF997D00D10534 = {
 			isa = PBXGroup;
 			children = (
 				8859C08122FF997D00D10534 /* imageia */,
 				8859C08022FF997D00D10534 /* Products */,
+				5F97A3119200FD1891046B14 /* Pods */,
+				E6AE02ED0B8BB03BFAAF4E95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +118,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E6AE02ED0B8BB03BFAAF4E95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6F1D19DDD531229BD9B609 /* Pods_imageia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8859C09122FF998B00D10534 /* Build configuration list for PBXNativeTarget "imageia" */;
 			buildPhases = (
+				437368F4E3F48DA5A3B775AA /* [CP] Check Pods Manifest.lock */,
 				8859C07B22FF997D00D10534 /* Sources */,
 				8859C07C22FF997D00D10534 /* Frameworks */,
 				8859C07D22FF997D00D10534 /* Resources */,
+				81DC930754C9E5B80E2CA944 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437368F4E3F48DA5A3B775AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-imageia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81DC930754C9E5B80E2CA944 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-imageia/Pods-imageia-frameworks.sh",
+				"${PODS_ROOT}/TinyCrayon/TCMask.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TCMask.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imageia/Pods-imageia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8859C07B22FF997D00D10534 /* Sources */ = {
@@ -320,11 +393,13 @@
 		};
 		8859C09222FF998B00D10534 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A4C37A620A7D4FF2677C2B /* Pods-imageia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BC5594CU;
 				INFOPLIST_FILE = imageia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,17 +407,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JeguLabs.imageia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8859C09322FF998B00D10534 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4114ED9E3127FFCAA87FDB6B /* Pods-imageia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BC5594CU;
 				INFOPLIST_FILE = imageia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JeguLabs.imageia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

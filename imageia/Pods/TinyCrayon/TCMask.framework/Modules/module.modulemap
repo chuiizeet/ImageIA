@@ -1,0 +1,11 @@
+framework module TCMask {
+  umbrella header "TCMask.h"
+
+  export *
+  module * { export * }
+}
+
+module TCMask.Swift {
+    header "TCMask-Swift.h"
+    requires objc
+}
